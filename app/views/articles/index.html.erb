@@ -18,6 +18,8 @@
 
   <br>
   <div class="col-sm-12">
-    <%= link_to 'New Article', new_article_path, class: "btn btn-forms" %>
+    <% if user_signed_in? %>
+      <%= link_to 'New Article', new_article_path, class: "btn btn-forms" %>
+    <% end %>
   </div>
 </div>
