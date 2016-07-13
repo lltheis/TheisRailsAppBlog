@@ -2,11 +2,8 @@
 <div class="content">
   <h1>our blog</h1>
     <% @articles.each do |article| %>
-
-      <div class="blog-title"><%= article.title %></div>
-      <div class="blog-date"><%= article.date %></h4>
-      <div><%= truncate(article.text, :length => 500, :seperator => ' ...') %></div>
-      <div><%= link_to 'Read More', article, class: "btn btn-forms btn-readmore" %></div>
+      <%= render article %>
+      
 
       <hr>
 
@@ -22,4 +19,5 @@
       <%= link_to 'New Article', new_article_path, class: "btn btn-forms" %>
     <% end %>
   </div>
+  <%= will_paginate @articles %>
 </div>

@@ -180,6 +180,24 @@ background-image: none;
 		color: #fff;
 }
 
+/*****  PAGINATION   *****/
+.pagination {
+	font-size: 1.2em;
+}
+
+.previous_page {
+	padding: 2px;
+}
+
+.current {
+	padding: 2px;
+	font-style: normal;
+}
+
+.next_page {
+	padding: 2px;
+}
+
 
  /*****  FOOTER   *****/
 .footer {
