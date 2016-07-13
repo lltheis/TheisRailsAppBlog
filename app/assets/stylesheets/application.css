@@ -13,3 +13,189 @@
  *= require_tree .
  *= require_self
  */
+
+ /*****  GOOGLE FONTS   *****/
+@import url(https://fonts.googleapis.com/css?family=Lobster+Two:400,700);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700);
+
+
+ /*****  FONT VARIABLES   *****/
+$lobster-two: 'Lobster Two', Arial, sans-serif;
+$playfair-display: 'Playfair Display', 'Times New Roman', serif;
+
+
+ /*****  GENERAL   *****/
+body {
+	padding: 50px 0px 50px 0px;
+	font-family: Arial, sans-serif;
+	height: 100%;
+}
+
+
+h1, h2, h3 {
+	font-family: 'Lobster Two', Futura, Arial, sans-serif;
+	color: #8cb63d;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+.content {
+ 	padding: 60px 20px;
+ 	z-index: 20;
+ }
+
+ th {
+ 	font-size: 1.5em;
+ }
+
+ .page-title {
+	padding-top: 20px;
+ }
+
+ /*****  NAVIGATION   *****/
+.navbar-inverse {
+	background-color: #333;
+	color: #fff;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	display: inline-block;
+	text-transform: uppercase;
+	z-index: 1;
+}
+
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+	color: #6fc84c;
+	transition: background-color 400ms,color 400ms;
+	-webkit-transition:background-color 400ms,color 400ms;
+}
+
+.navbar-header a {
+	color: #6fc84c;
+	font-family: 'Lobster Two', Futura, Arial, sans-serif;
+	text-transform: lowercase;
+	letter-spacing: .05em;
+	font-size: 4em;
+}
+
+.nav-other {
+	letter-spacing: .05em;
+	padding: 0px 10px 0px 10px;
+}
+
+.nav-home {
+	padding-top: 20px;
+}
+
+.navbar>ul>li>a {
+	color: #fff;
+}
+
+.anchor {
+	padding-top: 65px;
+}
+
+.navbar-inverse .nav li.dropdown.open > .dropdown-toggle,
+.navbar-inverse .nav li.dropdown.active > .dropdown-toggle,
+.navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle,
+.nav,
+.navbar,
+.navbar-inverse .navbar-inner {
+filter:none!important;
+background-image: none;
+}
+
+
+/*****  FORMS   *****/
+.authentication-forms {
+	max-width: 15%;
+}
+
+.btn-forms { 
+  color: #8CB63D; 
+  background-color: #FFFFFF; 
+  border-color: #8CB63D;
+  margin: 3px;
+} 
+
+.btn-forms:hover, 
+.btn-forms:focus, 
+.btn-forms:active, 
+.btn-forms.active, 
+.open .dropdown-toggle.btn-forms { 
+  color: #ffffff; 
+  background-color: #b4b4b4; 
+  border-color: #8CB63D; 
+} 
+
+.form-table-header {
+	width: 15%;
+}
+
+.form-field {
+	width: 50%;
+}
+
+.control-label {
+	font-family: Arial, sans-serif;
+	font-size: 1.1em;
+}
+
+/*****  BLOG POSTS   *****/
+.blog-title {
+	color: #8cb63d;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	font-size: 1.4em;
+	color: #101010;
+	font-family: Arial, sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+}
+
+.blog-date {
+
+}
+
+.blog-text {
+
+}
+
+.btn-readmore {
+	color: #fff;
+	background-color: #279B2E;
+	margin: 10px 0px 10px 0px;
+}
+
+.btn-readmore:visited {
+		color: #fff;
+}
+
+
+ /*****  FOOTER   *****/
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #E3F1CD;
+  padding: 10px 0px;
+}
+
+.footer, .push {
+    clear: both;
+}
+
+.footer-left {
+  display: inline-block;
+	}
+
+.footer-right {
+  float: right;
+  padding-right:5px;
+}
+
+.footer-image {
+	height: 20px;
+}
