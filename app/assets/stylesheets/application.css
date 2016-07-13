@@ -40,8 +40,8 @@ h1, h2, h3 {
 }
 
 .content {
- 	padding: 60px 20px;
- 	z-index: 20;
+ 	padding: 60px 20px 10px 20px;
+ 	z-index: 10;
  }
 
  th {
@@ -50,6 +50,10 @@ h1, h2, h3 {
 
  .page-title {
 	padding-top: 20px;
+ }
+
+ .jumbotron {
+ 	padding: 10px;
  }
 
  /*****  NAVIGATION   *****/
@@ -133,13 +137,18 @@ background-image: none;
 }
 
 .form-field {
-	width: 50%;
+	width: 75%;
+}
+
+.form-text {
+	height: 200px !important;
 }
 
 .control-label {
 	font-family: Arial, sans-serif;
 	font-size: 1.1em;
 }
+
 
 /*****  BLOG POSTS   *****/
 .blog-title {
