@@ -4,6 +4,10 @@
 	<div class="blog-date"><%= @article.date %></div>
 	<div class="blog-text"><%= @article.text %></div>
 	<br>
-	<%= link_to 'Edit', edit_article_path(@article), class: "btn btn-forms" %>
+
+	<% if user_signed_in? %>
+    <%= link_to 'Edit', edit_article_path(@article), class: "btn btn-forms" %>
+  <% end %>
+	
 	<%= link_to 'Back to blogs', articles_path, class: "btn btn-readmore" %>
 </div>

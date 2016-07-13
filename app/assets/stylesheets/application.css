@@ -173,7 +173,7 @@ background-image: none;
 .btn-readmore {
 	color: #fff;
 	background-color: #279B2E;
-	margin: 10px 0px 10px 0px;
+	margin: 10px 0px 20px 0px;
 }
 
 .btn-readmore:visited {
@@ -190,11 +190,15 @@ background-image: none;
   padding: 10px 0px;
 }
 
-.footer-right {
-  float: right;
-  padding-right:5px;
+.footer-center  {
+	float: none;
 }
 
 .footer-image {
 	height: 20px;
+	display: inline-block;
+}
+
+.footer-right  {
+	text-align: right;
 }

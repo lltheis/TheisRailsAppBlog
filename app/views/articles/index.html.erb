@@ -10,11 +10,11 @@
 
       <hr>
 
-      <%= link_to 'Edit', edit_article_path(article), class: "btn btn-forms" %>
-      <%= link_to 'Destroy', article, class: "btn btn-forms", method: :delete, data: { confirm: 'Are you sure?' } %>
-
+      <% if user_signed_in? %>
+        <%= link_to 'Edit', edit_article_path(article), class: "btn btn-forms" %>
+        <%= link_to 'Destroy', article, class: "btn btn-forms", method: :delete, data: { confirm: 'Are you sure?' } %>
       <% end %>
-
+    <% end %>
 
   <br>
   <div class="col-sm-12">
